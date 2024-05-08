@@ -1,0 +1,27 @@
+torchrun \
+    --standalone \
+    --nproc_per_node=1 \
+    run.py \
+    --task_name anomaly_detection \
+    --model VQ_MTM \
+    --learning_rate 5e-4 \
+    --normalize \
+    --patience 3 \
+    --num_epochs 60 \
+    --codebook_item 1024 \
+    --e_layers 2 \
+    --d_model 256 \
+    --hidden_channels 16 \
+    --activation "gelu" \
+    --linear_dropout 0.6 \
+    --train_batch_size 1 \
+    --test_batch_size 1 \
+    --dropout 0.3 \
+    --input_len 12 \
+    --num_workers 10 \
+    --use_scheduler \
+    --weight_decay 1e-4 \
+    --dataset TUAB \
+    --root_path <root_path> \
+    --log_dir <log_dir> \
+    --pretrained_path <pretrained_path>

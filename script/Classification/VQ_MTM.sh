@@ -1,0 +1,24 @@
+torchrun \
+    --standalone \
+    --nproc_per_node=2 \
+    run.py \
+    --task_name classification \
+    --model BERT \
+    --learning_rate 1e-4 \
+    --normalize \
+    --patience 0 \
+    --num_epochs 60 \
+    --codebook_item 1024 \
+    --e_layers 2 \
+    --d_model 256 \
+    --hidden_channels 16 \
+    --activation "gelu" \
+    --linear_dropout 0.0 \
+    --train_batch_size 128 \
+    --test_batch_size 128 \
+    --dropout 0.3 \
+    --num_workers 16 \
+    --use_scheduler \
+    --weight_decay 1e-4 \
+    --pretrained_path <pretrained_path> \
+    --input_len 12
