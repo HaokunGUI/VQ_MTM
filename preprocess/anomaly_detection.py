@@ -96,8 +96,8 @@ def getSeizureTimes(file_name):
 
 if __name__ == '__main__':
     preprocess(
-        input_dir='/data/guihaokun/processed_data',
-        output_dir='/home/guihaokun/Time-Series-Pretrain/data/file_markers_detection',
-        raw_data_dir='/data/guihaokun/project/tuh_eeg_seizure/v2.0.0/edf/',
+        input_dir="<input_dir>",
+        output_dir="<output_dir>",
+        raw_data_dir="<raw_data_dir>",
         clip_size=12,
     )

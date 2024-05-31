@@ -53,13 +53,13 @@ if __name__ == "__main__":
     parser.add_argument(
         "--raw_edf_dir",
         type=str,
-        default='/data/guihaokun/project/tuh_eeg_seizure/v2.0.0/edf/train',
+        default="<raw_edf_dir>",
         help="Full path to raw edf files.",
     )
     parser.add_argument(
         "--save_dir",
         type=str,
-        default='/home/guihaokun/Time-Series-Pretrain/data',
+        default="<save_dir>",
         help="Full path to save mean and std.",
     )
     args = parser.parse_args()

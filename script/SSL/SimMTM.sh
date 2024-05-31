@@ -23,4 +23,6 @@ torchrun \
     --dropout 0.3 \
     --num_workers 10 \
     --use_scheduler \
+    --root_path <root_path> \
+    --log_dir <log_dir> \
     --warmup_epochs 20

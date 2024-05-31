@@ -34,9 +34,9 @@ def generate_marker(dir_path:str, time_step:int, write_dir:str, h5_dir:str):
     
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--dir_path', type=str, default='/data/guihaokun/project/tuh_eeg_abnormal/v3.0.0/edf/')
-    parser.add_argument('--h5_dir', type=str, default='/data/guihaokun/resample/tuh_eeg_abnormal')
+    parser.add_argument('--dir_path', type=str, default="<dir_path>")
+    parser.add_argument('--h5_dir', type=str, default="<h5_dir>")
     parser.add_argument('--time_step', type=int, default=60)
-    parser.add_argument('--write_dir', type=str, default='/home/guihaokun/Time-Series-Pretrain/data/ab_ssl')
+    parser.add_argument('--write_dir', type=str, default="<write_dir>")
     args = parser.parse_args()
     generate_marker(args.dir_path, args.time_step, args.write_dir, args.h5_dir)

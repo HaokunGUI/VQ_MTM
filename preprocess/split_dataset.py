@@ -92,7 +92,7 @@ def process(detection_dir: str, ssl_dir: str, output_dir: str):
     split_ssl_dataset(ssl_dir, output_dir, dev_set)
 
 if __name__ == '__main__':
-    detection_dir = '/home/guihaokun/Time-Series-Pretrain/data/ab_detection_origin'
-    ssl_dir = '/home/guihaokun/Time-Series-Pretrain/data/ab_ssl_origin'
-    output_dir = '/home/guihaokun/Time-Series-Pretrain/data/'
+    detection_dir = "<detection_dir>"
+    ssl_dir = "<ssl_dir>"
+    output_dir = "<output_dir>"
     process(detection_dir, ssl_dir, output_dir)

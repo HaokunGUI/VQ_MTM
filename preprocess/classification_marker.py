@@ -131,8 +131,8 @@ def preprocess(raw_dir: str, processed_data: str, output_dir: str, slice_len: in
 
 if __name__ == '__main__':
     preprocess(
-        raw_dir='/data/guihaokun/project/tuh_eeg_seizure/v2.0.0/edf',
-        processed_data='/data/guihaokun/resample/tuh_eeg_seizure',
-        output_dir='/data/guihaokun/classification',
+        raw_dir="<raw_dir>",
+        processed_data="<processed_data>",
+        output_dir="<output_dir>",
         slice_len=60
     )
