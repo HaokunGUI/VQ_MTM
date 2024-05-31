@@ -1,4 +1,4 @@
-# A Vector Quantization Pretraining Method for EEG Time Series with Random Projection and Phase Alignment
+# A Vector Quantization Pretraining for EEG Time Series with Random Projection and Phase Alignment
 
 **[Model]** We propose a BERT-style self-supervised learning model, VQ-MTM (Vector Quantization Masked Time-Series Modeling), for the EEG time series data analysis. At its core, VQ-MTM comprises a theoretically grounded random-projection quantization module and a phase-aligning module guided by the Time-Phase-Shift Equivariance of Fourier Transform, the two modules can generate well-defined semantic units (akin to words in natural language) for the corrupted and periodic time series, thus offering robust and consistent learning signals for the EEG self-supervised learning.
 <p align="center">
