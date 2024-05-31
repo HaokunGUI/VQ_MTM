@@ -3,7 +3,7 @@ torchrun \
     --nproc_per_node=2 \
     run.py \
     --task_name classification \
-    --model BERT \
+    --model VQ_MTM \
     --learning_rate 1e-4 \
     --normalize \
     --patience 0 \

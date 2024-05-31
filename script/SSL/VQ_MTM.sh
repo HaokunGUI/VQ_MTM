@@ -3,7 +3,7 @@ torchrun \
     --nproc_per_node=1 \
     run.py \
     --task_name ssl \
-    --model BERT \
+    --model VQ_MTM \
     --learning_rate 2e-3 \
     --normalize \
     --patience 0 \
