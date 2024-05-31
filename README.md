@@ -51,7 +51,7 @@ bash script/<Traing_Stage>/<Model_Name>.sh
 ## 2. Citations
 ```bibtex
 @inproceeding{gui2024vqmtm,
-    title={A Vector Quantization Pretraining Method for EEG Time Series with Random Projection and Phase Alignment},
+    title={A Vector Quantization Pretraining for EEG Time Series with Random Projection and Phase Alignment},
     author={Gui, Haokun and Li, Xiucheng and Chen, Xinyang},
     booktitle={Forty-first International Conference on Machine Learning},
     year={2024},
